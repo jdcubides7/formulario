@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body{
+            background-image: url('./imagen_formulario.jpg'); /*Busca la imagen de fondo para eñ body*/
+            background-size: cover; /*Hace que la imagen quede en toda la pantalla*/
+            /*border: rgb(30, 158, 233) 2px solid;
+            margin-top: 50px; margin-right: 200px;margin-left: 200px;colocar una margen*/
+
+        }   
+        h1{
+           
+           color:rgb(153, 170, 180); /*Color de la letra*/
+           text-align: center; /*Centrar la etiqueta*/
+           font-family: monotype corsiva; /*Fuente de la letra*/
+           font-weight: 100; /*Grosor de la letra*/
+           font-size: 300%; /*Tamaño o dimension de la letra*/
+
+        }
+        h2{
+            color:rgba(216, 8, 112, 0.986); /*Color de la letra*/
+            text-align: center; /*Centrar la etiqueta*/
+            font-family: monotype corsiva; /*Fuente de la letra*/
+            font-weight: 100; /*Grosor de la letra*/
+            font-size: 30px; /*Tamaño o dimension de la letra*/
+        }
+        button{
+            color:rgba(216, 8, 112, 0.986); /*Color de la letra*/
+            font-family: monotype corsiva; /*Fuente de la letra*/
+            font-weight: 100; /*Grosor de la letra*/
+            font-size: 150%; /*Tamaño del boton*/
+            cursor: pointer; /*La mano encima del boton*/
+            border-radius: 10px; /*Redondea el boton*/
+
+        }
+        input[type="text"],[type="email"],[type="number"]{
+            border-radius: 10px;  /*Redondea el input*/
+            height: 25px; /*Ancho del imput*/
+
+        }
+        
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Formulario Analisis y Desarrollo de Sistemas de Información</h1>
+    
+    
+        <h2>Ingrese su nombre: 
+            <input type="text">
+        </h2>
+    
+    
+        <h2>Ingrese sus apellidos: 
+            <input type="text">
+        </h2>
+
+        <h2>Ingrese su email: 
+            <input type="email">
+        </h2>
+
+        <h2>
+            Ingrese su numero de documento: 
+            <input type="number">
+        </h2> 
+
+        <!--<h2>Ingrese su email: <input type="email" placeholder="ingrese su email"></h2> 
+        Escribe el ingrese email dentro del input-->
+        
+        <!--Subir una imagen-->
+        <h2>
+            Adjuntar una imagen o foto
+            <input type="file">  </h2>
+        
+            <!--Desplegable de opciones-->
+        <h2> Selecciona tu ciudad:
+            <select name="" id="">
+                <option value="">Bogotá</option>
+                <option value="">Amazonas</option>
+                <option value="">Valledupar</option>
+                <option value="">Cali</option>
+                <option value="">Medellin</option>
+                <option value="">Valledupar</option>
+                <option value="">Cucuta</option>
+                <option value="">Pasto</option>
+                <option value="">Valledupar</option>
+                <option value="">Guajira</option>
+                <option value=""></option>
+            </select>
+        </h2>
+
+        <!--Seleccionador unica opcion-->
+        <h2>Elige tu genero: 
+            <input type="radio" name="g">Masculino | 
+            <input type="radio" name="g">Femenino
+        </h2>
+
+        <h2>Ingrese su numero de telefono: 
+            <input type="number" max="10">
+        </h2> 
+
+        <center>
+            <button type="Submit" autofocus"> <!--onclick="alert ('Informacion enviada')-->
+                Enviar Informacion
+            </button>  
+        </center>
+            
+        
+            
+    
+    
+
+    
+</body>
+</html>
